@@ -1,0 +1,457 @@
+Introduction to Angular
+***********************
+	- Angular is the framework.
+
+	- Angular is the JavaScript Framework.
+
+	- Framework Containes Predefined Functionalities.
+
+	- to use Predefined Functionalities, we should follow Rules & Regulations.
+
+		Ex.
+
+			MVC
+
+			M - Model
+
+			V - View
+
+			C - Controller / Component
+
+	- Angular Released By Google.
+
+	- Angular Categorized into 3 flavours
+
+		1) AngularJS
+
+		2) Angular2
+
+		3) Angular Material
+
+	- AngularJS, used to develop the web applications
+
+	- we will  develop AngularJS Applications with the help of JavaScript
+	
+	- JavaScript is the Scripting Language and Object Based.
+
+	- Angular2, used to build the web applications and mobile applications
+
+	- Current Version of Angular2 is Angular13.
+
+	- Angular13 Applications we will develop by using TypeScript.
+
+	- TypeScript is the Programming Language, and follows the OOPS. and released by Microsoft.
+
+	- Angular Material, used to apply the Rich UI to both web applications and mobile applications.
+
+	- Angular Applications are Component Based.
+
+	- Because Of Components, Code Reusability is High and Modularity Incresed in Angular Applications.
+	
+	- we will save TypeScript files with ".ts" extension.
+
+	- Visual Studio Code is Suggestable IDE, to build the Angular Applications.
+
+	- Visual Studio Code also called as VSCode.
+
+	- VSCode is the Open Source IDE and Released By Microsoft.
+
+	- Angular Installation depending on npm tool
+
+	- npm stands for node packaging manager.
+
+	- npm present in NodeJS.
+
+	- we will download 3rd party libraries with the help of yarn tool
+
+	- yarn tool given by facebook.
+
+	- In general, browsers won't understand TypeScript.
+
+	- So, we need to convert TypeScript to Equalent JavaScript.
+
+	- Conversion of TypeScript to Equalent JavaScript called as Transpilation
+	
+	- "polyfills.js" is the library, helps to perform the Transpilation
+
+	- "polyfills.js" is the inbuilt library in Angular Framework.
+
+	- Angular follows the MVC Design Pattern.
+
+		M - Model
+
+		V - View
+
+		C - Component
+
+	- variables behaves like Model.
+
+	Ex.
+		var data = "data from mongodb database soon";
+
+
+	- where "data" is the model.
+
+	- we can use HTML,HTML5, Python, PERL,.....as View in Angular
+
+	- classes behaves like Component in Angular.
+
+	Ex.
+
+		class class_one{
+
+		}
+
+	where "class_one" is the Component in angular
+
+
+
+Software Installations
+**********************
+
+1) download and install NodeJS
+
+
+	website : https://nodejs.org/en/download/
+
+	file    : node-v16.13.1-x64.msi
+
+
+
+2) install yarn tool.
+
+	yarn tool given by facebook.
+
+	yarn tool, used to download the 3rd party libraries
+
+	yarn tool, installation is command based installation
+
+
+	> npm install -g yarn
+
+	"-g" stands for global installation
+
+
+3) install angular
+
+	angular installation also command based installation
+
+	> npm install -g @angular/cli
+
+	cli stands for command line interface
+
+	cli is the tool
+
+	cli tool provided by google
+
+	cli tool helps to create and execute the angular applications.	
+
+
+
+
+4) link the yarn tool cli tool
+
+	> ng config --global cli.packageManager yarn
+
+
+5) download and install Visual Studio Code
+
+	website : https://code.visualstudio.com/docs/?dv=win
+
+	file    : VSCodeUserSetup-x64-1.63.2.exe
+
+
+
+
+create the first angular application
+************************************
+
+1) create the directory
+
+	Ex.
+		Angular-10.30AM
+
+
+2) open above directory with VSCode
+
+
+3) create the angular application
+
+	> ng new firstApp
+
+
+	where "firstApp" is the name of the angular application
+
+
+4) switch to angular application
+
+
+	> cd firstApp
+
+
+5) execute the angular application
+
+	> ng s -o
+
+	"s" stands for serve
+
+	"-o" stands for open the default browser
+
+	Default Port Number of Angular Application is "4200"
+
+
+	we can change port number also
+
+
+Directory Structure of Angular Application
+******************************************
+
+1) node_modules
+
+	- node_modules containes libraries.
+
+	- these libraries helps to execute the angular application.
+
+
+
+2) src/app
+
+	- all our components we should deploy in src/app folder.
+
+
+3) src/app/app.component.ts
+	   app.component.html
+           app.component.css
+           app.component.spec.ts
+
+	- when ever we create the angular application automatically AppComponent the default Component
+
+4) src/app/app.module.ts
+
+	app.module.ts file called as registration file
+
+	app.module.ts file called as default module file
+
+	as a developer, we are developing more components
+
+	in general, our components executed by angular framework
+
+	to make availability of our components to angular framework, we must register in app.module.ts file
+
+
+
+
+5) src/assets
+
+	- used to deploy the static resources.
+
+	Ex.
+		images
+
+		logos
+
+		xml files
+
+		text files
+
+		json files
+
+		---
+		---
+		---
+
+
+
+6) src/environment
+
+	in general, we have two types of environments
+
+	1) development environment
+
+	2) production environment
+
+
+	src/evnironment/environment.ts
+
+	used to configure the development related information
+
+	src/environment/environment.prod.ts
+
+	used to configure the production related information
+
+
+
+
+7) src/favicon.ico
+
+	- this is the default logo of angular framework
+
+8) src/index.html
+
+	- index.html file called as main template
+
+	- angular framework starts the execution from index.html file
+
+	- when ever we execute the angular application immidiately index.html file will execute
+
+	- index.html file immidiately executes the "main.ts" file
+
+	- "main.ts" file immidiately executes the "app.module.ts" file
+
+	- "app.module.ts" file containes components, services, directives and pipes information
+
+	- based on registration file, our components will execute and output will be rendered in index.html file
+
+
+
+
+8) src/main.ts
+
+	main.ts file acting as interface between index.html and app.module.ts file
+
+
+
+
+9) src/polyfills.ts
+
+	polyfills.ts file acting as library file
+
+	polyfills.ts file automatically performs the transpilation
+	
+	converting typescript code to equalent javascript code called as transpilation
+
+
+
+10) src/styles.css
+
+	we can define global styles
+
+	these styles applicable to entire angular project
+
+
+11) src/test.ts
+
+	this is the default testing of app.module.ts file
+
+
+
+
+12) .browserslistrc
+
+	- it containes supporting browsers information.
+
+
+Component
+*********
+	- Reusable Portion of complex UI Called as Component.
+
+	- we can create more than one component
+
+	- we can include one component to another component also
+
+	- we can provide communication between components
+
+	- angular applications are component based applications
+
+	- Because of components code Reusability is high in angular
+
+	- in general, we will deploy our components in src/app folder
+
+	- after deploying the component we should register in app.module.ts file
+
+
+******************************************
+component-app
+			src
+			   app
+			   	  first.component.ts
+				  first.component.html
+
+				  app.module.ts
+			   index.html
+******************************************
+
+
+***************************************************************
+multi-components-app
+				   src
+				     app
+					 	header.component.ts
+						 header.component.html
+
+						 body.component.ts
+						 body.component.html
+
+						 footer.component.ts
+						 footer.component.html
+
+						 main.component.ts
+						 main.component.html
+
+						 app.module.ts
+					 index.html
+****************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
