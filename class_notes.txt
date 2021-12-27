@@ -394,6 +394,223 @@ multi-components-app
 
 
 
+MEAN Stack Application
+***********************
+
+M - MongoDB
+
+E - ExpressJS
+
+A - Angular
+
+N - NodeJS
+
+	MongoDB is "database"
+
+	Angular is "frontend"
+
+	NodeJS is "backend"
+
+	ExpressJS used to develop the "rest api's"
+
+
+1) deploy images to aws server s3 bucket
+
+	aws stands for amazon web services
+
+	aws is cloud server
+
+	aws server providing s3 bucket server
+
+	s3 bucket, used to deploy the static resources
+
+	Ex.
+		images
+		audio files
+		video files
+		xml files
+		json files
+		---
+		---
+		---
+
+
+	=> create aws account
+
+	url : https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Ffromtb%3Dtrue%26hashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-1_858e6f657b3f88e7&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=CsBRkZo8nINMNTbz-INSC5WNsxNhTM3wjSh8LEHnBSs&code_challenge_method=SHA-256
+
+
+
+
+	=> login into aws account
+
+
+Image URLS
+**********
+
+https://ngmrnbatch.s3.us-east-2.amazonaws.com/p1.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAr%2FxwWU74w9B9u%2Fbt%2BYCg8W6WReu1xF0Z52FzI%2BPZ3eUCIQDXb7U64YprKTxepuayBmSIjc%2B%2BCa0aXFG8%2BMqBM3fKoir%2FAgif%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM0OTYwNTQxMTAwNCIMyQ5Q7NbPmCLsDpRkKtMC0y45dpvRsahKGutpvYjXiY%2B2yNZB7j8boas8QAesBdryhrf5%2BkoruurUPRPyoOspb%2FZMn%2ForU80kKOu%2Bf9svwzOSQVQvBR%2Fi0xLkphaC%2B0aMxKs6V5HkdEMGzvv8JN7EMnFrJ8%2BtM3AwRi0MYZkFphVze7ZR9%2FAJcj56AxgVjwvt76npR0SieyXev%2FczgDX%2F2yYNJvR4N3P6JH89nMOrhdy2AYGAVn3zOwyL6JZwuiTODPsgUnCyWO5EprDVkGA8qhVddjLWjVAL5bGfCeGUObBmPcY%2BJZ8i2QUjzJCUkOixFPqgmpWp0fezhTg%2B%2Bz%2FNNny5qy%2F7nwCVTZ%2BurDtSY%2BXYTNMvgiHrcSO4IL16s7wMePyHGK70CdUhGOfKk9bZ3oZDyS257kPVMvjxNlG668thZLspnTfJ%2FDmaj4FbSKyZkZUsPgPFFkpM3a3xoffbOzOQMKidpY4GOrICXL6Y98H4u1B1dfpkesmwIT16nX%2F45xSYz9cUueODaY8dN0r9ZvNC15%2BNr%2BAZNftqeCKVTIBYljOx%2B8JFPRomaBzDrK3GFxDgMjc7aNbkS1X4Idbicv4%2BMuqZXKGQ9s5kkNzm6O1GwBYmHGWYpFh0%2FiZKmPq06MMTiKPZALn7CYYzcDYei9xTe5DVXGdu4mF5mncA6gSkf03CYXhKajMjMo1Qn13uCUakGvtbbkFFO1M6HWhv0tU6As%2Bvm2ZFqQLh6YsawAnTo6KvzVHwjg2%2F%2BGehTy0MEEzdnCPETMQkcTsRsIbEQZYOIyJUCzf5kHbAMb3b3PCGSKPQMZ8zgcapteTXkUOvqal0CtwX5TBwmENT%2B7vj%2FpuIYa1xTkByJr22zWRuDXTALOSEf9CXpBJt3K1p&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211227T053238Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVCZQ3HC6GANAXFZQ%2F20211227%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=ecff31f0ebc4048b35b61828cae8287fd8e92ad1c203e4ed9bb742bfa502abdb
+
+https://ngmrnbatch.s3.us-east-2.amazonaws.com/p2.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAr%2FxwWU74w9B9u%2Fbt%2BYCg8W6WReu1xF0Z52FzI%2BPZ3eUCIQDXb7U64YprKTxepuayBmSIjc%2B%2BCa0aXFG8%2BMqBM3fKoir%2FAgif%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM0OTYwNTQxMTAwNCIMyQ5Q7NbPmCLsDpRkKtMC0y45dpvRsahKGutpvYjXiY%2B2yNZB7j8boas8QAesBdryhrf5%2BkoruurUPRPyoOspb%2FZMn%2ForU80kKOu%2Bf9svwzOSQVQvBR%2Fi0xLkphaC%2B0aMxKs6V5HkdEMGzvv8JN7EMnFrJ8%2BtM3AwRi0MYZkFphVze7ZR9%2FAJcj56AxgVjwvt76npR0SieyXev%2FczgDX%2F2yYNJvR4N3P6JH89nMOrhdy2AYGAVn3zOwyL6JZwuiTODPsgUnCyWO5EprDVkGA8qhVddjLWjVAL5bGfCeGUObBmPcY%2BJZ8i2QUjzJCUkOixFPqgmpWp0fezhTg%2B%2Bz%2FNNny5qy%2F7nwCVTZ%2BurDtSY%2BXYTNMvgiHrcSO4IL16s7wMePyHGK70CdUhGOfKk9bZ3oZDyS257kPVMvjxNlG668thZLspnTfJ%2FDmaj4FbSKyZkZUsPgPFFkpM3a3xoffbOzOQMKidpY4GOrICXL6Y98H4u1B1dfpkesmwIT16nX%2F45xSYz9cUueODaY8dN0r9ZvNC15%2BNr%2BAZNftqeCKVTIBYljOx%2B8JFPRomaBzDrK3GFxDgMjc7aNbkS1X4Idbicv4%2BMuqZXKGQ9s5kkNzm6O1GwBYmHGWYpFh0%2FiZKmPq06MMTiKPZALn7CYYzcDYei9xTe5DVXGdu4mF5mncA6gSkf03CYXhKajMjMo1Qn13uCUakGvtbbkFFO1M6HWhv0tU6As%2Bvm2ZFqQLh6YsawAnTo6KvzVHwjg2%2F%2BGehTy0MEEzdnCPETMQkcTsRsIbEQZYOIyJUCzf5kHbAMb3b3PCGSKPQMZ8zgcapteTXkUOvqal0CtwX5TBwmENT%2B7vj%2FpuIYa1xTkByJr22zWRuDXTALOSEf9CXpBJt3K1p&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211227T053359Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVCZQ3HC6GANAXFZQ%2F20211227%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=201ed106a80eb21f41157ede02dcbd479e7ed6ec28b29841a66171a8034f8d9d
+
+https://ngmrnbatch.s3.us-east-2.amazonaws.com/p3.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAr%2FxwWU74w9B9u%2Fbt%2BYCg8W6WReu1xF0Z52FzI%2BPZ3eUCIQDXb7U64YprKTxepuayBmSIjc%2B%2BCa0aXFG8%2BMqBM3fKoir%2FAgif%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM0OTYwNTQxMTAwNCIMyQ5Q7NbPmCLsDpRkKtMC0y45dpvRsahKGutpvYjXiY%2B2yNZB7j8boas8QAesBdryhrf5%2BkoruurUPRPyoOspb%2FZMn%2ForU80kKOu%2Bf9svwzOSQVQvBR%2Fi0xLkphaC%2B0aMxKs6V5HkdEMGzvv8JN7EMnFrJ8%2BtM3AwRi0MYZkFphVze7ZR9%2FAJcj56AxgVjwvt76npR0SieyXev%2FczgDX%2F2yYNJvR4N3P6JH89nMOrhdy2AYGAVn3zOwyL6JZwuiTODPsgUnCyWO5EprDVkGA8qhVddjLWjVAL5bGfCeGUObBmPcY%2BJZ8i2QUjzJCUkOixFPqgmpWp0fezhTg%2B%2Bz%2FNNny5qy%2F7nwCVTZ%2BurDtSY%2BXYTNMvgiHrcSO4IL16s7wMePyHGK70CdUhGOfKk9bZ3oZDyS257kPVMvjxNlG668thZLspnTfJ%2FDmaj4FbSKyZkZUsPgPFFkpM3a3xoffbOzOQMKidpY4GOrICXL6Y98H4u1B1dfpkesmwIT16nX%2F45xSYz9cUueODaY8dN0r9ZvNC15%2BNr%2BAZNftqeCKVTIBYljOx%2B8JFPRomaBzDrK3GFxDgMjc7aNbkS1X4Idbicv4%2BMuqZXKGQ9s5kkNzm6O1GwBYmHGWYpFh0%2FiZKmPq06MMTiKPZALn7CYYzcDYei9xTe5DVXGdu4mF5mncA6gSkf03CYXhKajMjMo1Qn13uCUakGvtbbkFFO1M6HWhv0tU6As%2Bvm2ZFqQLh6YsawAnTo6KvzVHwjg2%2F%2BGehTy0MEEzdnCPETMQkcTsRsIbEQZYOIyJUCzf5kHbAMb3b3PCGSKPQMZ8zgcapteTXkUOvqal0CtwX5TBwmENT%2B7vj%2FpuIYa1xTkByJr22zWRuDXTALOSEf9CXpBJt3K1p&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211227T053440Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVCZQ3HC6GANAXFZQ%2F20211227%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=4a430cb1d371b44e387313b4669f9fdb8183edb1ac904a9da59302e21ad225c0
+
+https://ngmrnbatch.s3.us-east-2.amazonaws.com/p4.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAr%2FxwWU74w9B9u%2Fbt%2BYCg8W6WReu1xF0Z52FzI%2BPZ3eUCIQDXb7U64YprKTxepuayBmSIjc%2B%2BCa0aXFG8%2BMqBM3fKoir%2FAgif%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM0OTYwNTQxMTAwNCIMyQ5Q7NbPmCLsDpRkKtMC0y45dpvRsahKGutpvYjXiY%2B2yNZB7j8boas8QAesBdryhrf5%2BkoruurUPRPyoOspb%2FZMn%2ForU80kKOu%2Bf9svwzOSQVQvBR%2Fi0xLkphaC%2B0aMxKs6V5HkdEMGzvv8JN7EMnFrJ8%2BtM3AwRi0MYZkFphVze7ZR9%2FAJcj56AxgVjwvt76npR0SieyXev%2FczgDX%2F2yYNJvR4N3P6JH89nMOrhdy2AYGAVn3zOwyL6JZwuiTODPsgUnCyWO5EprDVkGA8qhVddjLWjVAL5bGfCeGUObBmPcY%2BJZ8i2QUjzJCUkOixFPqgmpWp0fezhTg%2B%2Bz%2FNNny5qy%2F7nwCVTZ%2BurDtSY%2BXYTNMvgiHrcSO4IL16s7wMePyHGK70CdUhGOfKk9bZ3oZDyS257kPVMvjxNlG668thZLspnTfJ%2FDmaj4FbSKyZkZUsPgPFFkpM3a3xoffbOzOQMKidpY4GOrICXL6Y98H4u1B1dfpkesmwIT16nX%2F45xSYz9cUueODaY8dN0r9ZvNC15%2BNr%2BAZNftqeCKVTIBYljOx%2B8JFPRomaBzDrK3GFxDgMjc7aNbkS1X4Idbicv4%2BMuqZXKGQ9s5kkNzm6O1GwBYmHGWYpFh0%2FiZKmPq06MMTiKPZALn7CYYzcDYei9xTe5DVXGdu4mF5mncA6gSkf03CYXhKajMjMo1Qn13uCUakGvtbbkFFO1M6HWhv0tU6As%2Bvm2ZFqQLh6YsawAnTo6KvzVHwjg2%2F%2BGehTy0MEEzdnCPETMQkcTsRsIbEQZYOIyJUCzf5kHbAMb3b3PCGSKPQMZ8zgcapteTXkUOvqal0CtwX5TBwmENT%2B7vj%2FpuIYa1xTkByJr22zWRuDXTALOSEf9CXpBJt3K1p&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211227T053504Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVCZQ3HC6GANAXFZQ%2F20211227%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=c0cce7967c5248229b417f1d3d2120f5d193572a1f95d095dd416910521822d3
+
+https://ngmrnbatch.s3.us-east-2.amazonaws.com/p5.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAr%2FxwWU74w9B9u%2Fbt%2BYCg8W6WReu1xF0Z52FzI%2BPZ3eUCIQDXb7U64YprKTxepuayBmSIjc%2B%2BCa0aXFG8%2BMqBM3fKoir%2FAgif%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM0OTYwNTQxMTAwNCIMyQ5Q7NbPmCLsDpRkKtMC0y45dpvRsahKGutpvYjXiY%2B2yNZB7j8boas8QAesBdryhrf5%2BkoruurUPRPyoOspb%2FZMn%2ForU80kKOu%2Bf9svwzOSQVQvBR%2Fi0xLkphaC%2B0aMxKs6V5HkdEMGzvv8JN7EMnFrJ8%2BtM3AwRi0MYZkFphVze7ZR9%2FAJcj56AxgVjwvt76npR0SieyXev%2FczgDX%2F2yYNJvR4N3P6JH89nMOrhdy2AYGAVn3zOwyL6JZwuiTODPsgUnCyWO5EprDVkGA8qhVddjLWjVAL5bGfCeGUObBmPcY%2BJZ8i2QUjzJCUkOixFPqgmpWp0fezhTg%2B%2Bz%2FNNny5qy%2F7nwCVTZ%2BurDtSY%2BXYTNMvgiHrcSO4IL16s7wMePyHGK70CdUhGOfKk9bZ3oZDyS257kPVMvjxNlG668thZLspnTfJ%2FDmaj4FbSKyZkZUsPgPFFkpM3a3xoffbOzOQMKidpY4GOrICXL6Y98H4u1B1dfpkesmwIT16nX%2F45xSYz9cUueODaY8dN0r9ZvNC15%2BNr%2BAZNftqeCKVTIBYljOx%2B8JFPRomaBzDrK3GFxDgMjc7aNbkS1X4Idbicv4%2BMuqZXKGQ9s5kkNzm6O1GwBYmHGWYpFh0%2FiZKmPq06MMTiKPZALn7CYYzcDYei9xTe5DVXGdu4mF5mncA6gSkf03CYXhKajMjMo1Qn13uCUakGvtbbkFFO1M6HWhv0tU6As%2Bvm2ZFqQLh6YsawAnTo6KvzVHwjg2%2F%2BGehTy0MEEzdnCPETMQkcTsRsIbEQZYOIyJUCzf5kHbAMb3b3PCGSKPQMZ8zgcapteTXkUOvqal0CtwX5TBwmENT%2B7vj%2FpuIYa1xTkByJr22zWRuDXTALOSEf9CXpBJt3K1p&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211227T053522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVCZQ3HC6GANAXFZQ%2F20211227%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=efa752acb5a6b1df269fdb6759d98cb61f211fe61b8c82535cebb55b1d8a6c7a
+
+https://ngmrnbatch.s3.us-east-2.amazonaws.com/p6.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAr%2FxwWU74w9B9u%2Fbt%2BYCg8W6WReu1xF0Z52FzI%2BPZ3eUCIQDXb7U64YprKTxepuayBmSIjc%2B%2BCa0aXFG8%2BMqBM3fKoir%2FAgif%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM0OTYwNTQxMTAwNCIMyQ5Q7NbPmCLsDpRkKtMC0y45dpvRsahKGutpvYjXiY%2B2yNZB7j8boas8QAesBdryhrf5%2BkoruurUPRPyoOspb%2FZMn%2ForU80kKOu%2Bf9svwzOSQVQvBR%2Fi0xLkphaC%2B0aMxKs6V5HkdEMGzvv8JN7EMnFrJ8%2BtM3AwRi0MYZkFphVze7ZR9%2FAJcj56AxgVjwvt76npR0SieyXev%2FczgDX%2F2yYNJvR4N3P6JH89nMOrhdy2AYGAVn3zOwyL6JZwuiTODPsgUnCyWO5EprDVkGA8qhVddjLWjVAL5bGfCeGUObBmPcY%2BJZ8i2QUjzJCUkOixFPqgmpWp0fezhTg%2B%2Bz%2FNNny5qy%2F7nwCVTZ%2BurDtSY%2BXYTNMvgiHrcSO4IL16s7wMePyHGK70CdUhGOfKk9bZ3oZDyS257kPVMvjxNlG668thZLspnTfJ%2FDmaj4FbSKyZkZUsPgPFFkpM3a3xoffbOzOQMKidpY4GOrICXL6Y98H4u1B1dfpkesmwIT16nX%2F45xSYz9cUueODaY8dN0r9ZvNC15%2BNr%2BAZNftqeCKVTIBYljOx%2B8JFPRomaBzDrK3GFxDgMjc7aNbkS1X4Idbicv4%2BMuqZXKGQ9s5kkNzm6O1GwBYmHGWYpFh0%2FiZKmPq06MMTiKPZALn7CYYzcDYei9xTe5DVXGdu4mF5mncA6gSkf03CYXhKajMjMo1Qn13uCUakGvtbbkFFO1M6HWhv0tU6As%2Bvm2ZFqQLh6YsawAnTo6KvzVHwjg2%2F%2BGehTy0MEEzdnCPETMQkcTsRsIbEQZYOIyJUCzf5kHbAMb3b3PCGSKPQMZ8zgcapteTXkUOvqal0CtwX5TBwmENT%2B7vj%2FpuIYa1xTkByJr22zWRuDXTALOSEf9CXpBJt3K1p&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211227T053603Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVCZQ3HC6GANAXFZQ%2F20211227%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=ebec35116fa2dba5aa41bcba3d94b3c7f3b9a7702c972f09fd1f751f58397100
+
+
+store the images location in mongodb database
+*********************************************
+
+	- mongodb is the database
+
+	- mongodb is NoSQL database
+
+	- mongodb database supports the JSON
+
+	- mongodb database is light weight database
+
+	- mongodb database provides the cloud environment in the form of mongodb atlas
+
+
+				SQL											NoSQL
+
+Ex.
+		Oracle												MongoDB
+
+		MySQL												CassandraDB
+
+		SQLServer
+
+
+		databases											databases
+
+		tables												collections
+
+		records												document
+
+		primary key											_id
+
+
+
+
+=> create the mongodb atlas account
+
+	URL : https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_apac_india_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas%20login&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624347&adgroup=115749713263&gclid=Cj0KCQiAwqCOBhCdARIsAEPyW9n0j-vpM5YNLPOTlXsllhFargAGxGISWR7tBM-q0ufPVqp7BjMoPHEaAoWoEALw_wcB
+
+
+
+database details
+****************
+
+database name : ngmrngbatch
+
+collection name : products
+
+password : admin
+
+url : mongodb+srv://admin:admin@06-ng-11am.bskgx.mongodb.net/ngmrngbatch?retryWrites=true&w=majority
+
+
+NodeJS
+******
+	- NodeJS is the backend technology
+
+	- we will implement NodeJS applications with the help of JavaScript
+
+	- NodeJS, used to develop servers.
+
+	- NodeJS, supports the libraries
+
+1) express
+
+		express library used to develop the rest api's
+
+		Ex.
+				GET
+
+				POST
+
+				PUT
+
+				DELETE
+
+
+2) mongodb
+
+	mongodb library used to connect to mongodb database
+
+
+3) cors
+
+	cors library used to enable the ports communication
+
+
+
+we will download above libraries with the help of yarn tool
+
+above libraries downloads to "node_modules" folder in Current location
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
