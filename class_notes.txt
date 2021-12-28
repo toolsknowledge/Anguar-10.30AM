@@ -516,7 +516,7 @@ url : mongodb+srv://admin:admin@06-ng-11am.bskgx.mongodb.net/ngmrngbatch?retryWr
 
 NodeJS
 ******
-	- NodeJS is the backend technology
+	- NodeJS is the "backend" technology
 
 	- we will implement NodeJS applications with the help of JavaScript
 
@@ -526,7 +526,7 @@ NodeJS
 
 1) express
 
-		express library used to develop the rest api's
+		express library used to develop the "rest api's"
 
 		Ex.
 				GET
@@ -549,9 +549,71 @@ NodeJS
 
 
 
-we will download above libraries with the help of yarn tool
+we will download above libraries with the help of "yarn" tool
 
 above libraries downloads to "node_modules" folder in Current location
+
+
+=> create the directory
+
+Ex.
+	backend
+
+=> switch to backend directory
+
+	> cd backend
+
+=> download the node modules / libraries
+
+	1) express
+
+	2) mongodb
+
+	3) cors
+
+	> yarn add express mongodb cors
+
+=> implement the backend application
+
+	Ex.
+		server.js
+
+=> start the node server
+
+	> node server
+
+
+=> test the rest api by using Postman
+
+	http://localhost:8080/products
+
+hosting backend in aws server
+*****************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
