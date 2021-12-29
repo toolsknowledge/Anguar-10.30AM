@@ -590,6 +590,60 @@ Ex.
 hosting backend in aws server
 *****************************
 
+1) push code to github repository
+
+
+2) create the application in "aws" server
+
+	Elastic BeanStalk
+
+3) link the github repository to Elastic BeanStalk
+
+	CodePipeline
+
+4) get the cloud url from Elastic BeanStalk
+
+	URL : http://Ngbackend-env.eba-wcjaif5k.us-east-2.elasticbeanstalk.com/products
+
+
+
+
+frontend application
+********************
+
+
+1) create angular application
+
+	> ng new frontend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
