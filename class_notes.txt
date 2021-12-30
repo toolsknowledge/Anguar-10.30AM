@@ -617,6 +617,74 @@ frontend application
 	> ng new frontend
 
 
+frontend application deployment
+*******************************
+
+1) download and install aws cli tool
+
+	aws cli tool, used to push application to aws server
+
+
+website : https://aws.amazon.com/cli/
+
+file    : AWSCLIV2.msi
+
+
+2) prepare the angular production build
+
+	> ng build --prod=true
+
+		if production build success, automatically "dist" folder ready
+
+
+3) push dist folder to s3 bucket
+
+	1) properties  (static website hosting)
+
+	2) permissions   (edit the bucket policy)
+
+	{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::ngmrngbatch/*"
+        }
+    ]
+}
+
+4) create the Security Credential to our application
+
+	IAM
+
+5) modify the package.json file
+
+	"aws-deploy":"aws s3 sync dist/frontend/ s3://ngmrngbatch"
+
+
+6) execute the following commands
+
+	=> aws configure
+
+	=> ng build && npm run aws-deploy
+
+
+7) get the cloud url from static website hosting
+
+	URL : http://ngmrngbatch.s3-website.us-east-2.amazonaws.com
+
+
+
+
+
+
+
+
+
+
 
 
 

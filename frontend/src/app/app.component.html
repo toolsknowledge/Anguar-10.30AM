@@ -1,1 +1,43 @@
-{{records | json}}
+<!--
+    1) grid-container
+
+    2) row
+
+    3) brand
+
+    4) center
+
+-->
+<div class="grid-container">
+    <header class="row">
+        <div>
+            <a href="#" class="brand">AshokIT</a>
+        </div>
+
+        <div>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa fa-user-circle-o"></i></a>
+            <a href="#"><i class="fa fa-sign-out"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="row center">
+            <div *ngFor="let record of records">
+                <div class="card">
+                    <img src="{{record.image}}" alt={{record.name}} class="medium">
+
+                    <div class="card-body">
+                        <h2>Name....{{record.name}}</h2>
+                        <h5>Brand....{{record.brand}}</h5>
+                        <h5>price....$ {{record.cost}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="row center">
+        copyright@ashokit.in
+    </footer>
+</div>
