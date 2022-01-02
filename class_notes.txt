@@ -656,6 +656,10 @@ file    : AWSCLIV2.msi
     ]
 }
 
+
+
+
+
 4) create the Security Credential to our application
 
 	IAM
@@ -675,6 +679,35 @@ file    : AWSCLIV2.msi
 7) get the cloud url from static website hosting
 
 	URL : http://ngmrngbatch.s3-website.us-east-2.amazonaws.com
+
+
+
+
+
+
+Pipes
+*****
+	Pipes are used to "custimize" the data accroding to end user requirement.
+
+	we have "two" types of pipes
+
+	1) Predefined Pipes
+
+	2) custom pipes
+
+	pipes given by "angular" framework called as Predefined Pipes.
+
+	pipes "developed" by us based on application requirement called as custom pipes
+
+
+
+
+
+
+
+
+
+
 
 
 
