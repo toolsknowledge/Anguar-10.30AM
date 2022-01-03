@@ -1,0 +1,84 @@
+<!-- <button (click)="num = num+1"> + </button>
+<button>{{num}}</button>
+<button (click)="num = num-1"> - </button> -->
+
+
+<!--
+<input type="text" [(ngModel)]="obj.uname">
+<br><br>
+<input type="password" [(ngModel)]="obj.upwd">
+<br><br>
+<button (click)="login()">Login</button>
+-->
+
+
+<!-- <table border="1"
+       align="center"
+       cellpadding="10px"
+       cellspacing="10px">
+    <tr>
+        <th>SNO</th>
+        <th>P_ID</th>
+        <th>P_NAME</th>
+        <th>P_COST</th>
+    </tr>
+
+    <tr *ngFor="let obj of arr;let i = index">
+        <td>{{i+1}}</td>
+        <td>{{obj.p_id}}</td>
+        <td>{{obj.p_name}}</td>
+        <td>{{obj.p_cost}}</td>
+    </tr>
+</table>
+
+
+
+
+<div *ngFor="let element of [10,20,30,40,50];
+                            let i = index;
+                            let f = first;
+                            let l = last;
+                            let e = even;
+                            let o = odd;">
+        {{element}}...{{i}}...{{f}}...{{l}}...{{e}}...{{o}}
+</div> -->
+
+
+
+<div *ngIf="false;else elseBlock">
+    true block
+</div>
+
+<ng-template #elseBlock>
+    false block
+</ng-template>
+
+
+
+<div *ngFor="let x of [10,20,30,40,50];let e = even">
+    <div *ngIf="e" style="color: red;">{{x}}</div>
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

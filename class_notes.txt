@@ -701,6 +701,74 @@ Pipes
 
 
 
+Directives
+**********
+	Directives are used to enhance the "view" capabilities.
+
+	we have two types of Directives
+
+	1) Predefined Directives
+
+	2) Custom Directives
+
+	The Directives given by "angular" framework called as "Predefined" Directives
+
+	The Directives developed by us based on application requirement called as "Custom" Directives.
+
+
+Predefined Directives
+*********************
+1) Attribute Type Directives
+
+2) event type directives
+
+3) Structural Directives
+
+
+	- in general event based directives surrounder with ()
+
+	Ex.
+			(click)
+
+			(dblclick)
+
+			(ngSubmit)
+
+
+Ex.
+	(click)
+
+	(dblclick)
+
+	[(ngModel)]
+
+	*ngIf
+
+	[ngStyle]
+
+	[ngClass]
+
+	*ngFor
+
+	[ngSwitch]
+
+	(ngSubmit)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
