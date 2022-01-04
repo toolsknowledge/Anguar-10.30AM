@@ -1,0 +1,11 @@
+<p [ngStyle]="{'color':'red',
+               'background-color':'yellow'}">Hello</p>
+<br>
+<hr>
+<h1 [ngStyle]="{'color':sub === 'Angular13'?'red':'green'}">{{sub}}</h1>
+
+
+<div *ngFor="let obj of arr">
+    <p [ngStyle]="{'color':getColor(obj.name)}">{{obj.id}}...{{obj.name}}...{{obj.demand}}</p> 
+</div>
+

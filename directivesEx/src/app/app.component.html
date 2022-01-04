@@ -44,7 +44,7 @@
 </div> -->
 
 
-
+<!--
 <div *ngIf="false;else elseBlock">
     true block
 </div>
@@ -59,6 +59,24 @@
     <div *ngIf="e" style="color: red;">{{x}}</div>
    
 </div>
+-->
+
+
+<input type="text" #uname>
+<br><br>
+<input type="password" #upwd>
+<br><br>
+<button (dblclick)="clickMe(uname.value,upwd.value)">
+    Double Click
+</button>
+
+
+
+
+
+
+
+
 
 
 

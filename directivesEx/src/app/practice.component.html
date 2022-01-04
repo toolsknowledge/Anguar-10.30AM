@@ -1,0 +1,37 @@
+<!-- <h1 [ngStyle]="{'color':'red'}">{{var_one}}</h1>
+<h1 [ngStyle]="{'color':var_one === 'Hello_1'?'red':'green'}">{{var_one}}</h1>
+<div *ngFor="let record of arr">
+    <p [ngStyle]="{'color':getColor()}">{{record | json}}</p>
+</div>
+
+<h1 [ngClass]="{'text-success':true}">{{var_one}}</h1>
+<h1 [ngClass]="{'text-primary':var_one === 'Hello_1'}">{{var_one}}</h1>
+
+
+<div *ngFor="let rec of arr;let e = even;let o = odd">
+    <div [ngClass]="{'text-warning':e,'text-primary':o}">{{rec | json}}</div>
+</div>
+
+<hr>
+ -->
+
+
+
+
+ <input type="number" [(ngModel)]="num">
+
+ <br><br>
+
+ <div [ngSwitch]="num">
+     <h1 *ngSwitchCase="1" [ngStyle]="{'color':'red'}">{{num}}</h1>
+     <h1 *ngSwitchCase="2" [ngStyle]="{'color':'green'}">{{num}}</h1>
+     <h1 *ngSwitchCase="3" [ngStyle]="{'color':'blue'}">{{num}}</h1>
+     <h1 *ngSwitchDefault [ngClass]="{'bg-success':true}">{{num}}</h1>
+ </div>
+
+
+
+
+
+
+
