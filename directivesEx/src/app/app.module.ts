@@ -5,18 +5,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import DemoComponent from './demo.component';
 import { PracticeComponent } from './practice.component';
+import { FormComponent } from './form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
-    PracticeComponent
+    PracticeComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [PracticeComponent]
+  bootstrap: [FormComponent]
 })
 export class AppModule { }

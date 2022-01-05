@@ -1,0 +1,9 @@
+<form (ngSubmit)="myForm()">
+    <input type="text" [(ngModel)]="obj.uname" name="uname">
+    <br><br>
+    <input type="password" [(ngModel)]="obj.upwd" name="upwd">
+    <br><br>
+    <input type="submit">
+    <br><br>
+    <h1>{{status}}</h1>
+</form>
