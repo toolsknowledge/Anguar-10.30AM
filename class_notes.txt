@@ -759,6 +759,88 @@ Ex.
 
 
 
+Life Cycle Hooks
+****************
+	- every angular component containes life cycle hooks.
+
+
+	- component containes two phases
+
+			1) bootstrap phases
+
+
+			2) updation phase
+
+
+1) constructor
+
+	- constructor will execute at bootstrap phase
+
+	- constructor used to implement the dependency injection
+
+	- making availability of directives, pipes and services to components at bootstrap phase called as dependency injection
+
+
+2) ngOnChanges
+
+	- in general parent component shares the data to child component with the help of @Input() directive.
+
+	- if any change detected in @Input() variable, then this life cycle hook will execute.
+
+	- ngOnChanges life cycle hook will execute at updation phase
+
+
+
+4) ngDoCheck
+
+
+	- if any change detected in directives then this life cycle hook will execute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
