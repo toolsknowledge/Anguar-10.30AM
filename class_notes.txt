@@ -799,6 +799,58 @@ Life Cycle Hooks
 
 
 
+communication between components
+********************************
+	angular applications are Component based.
+
+	as a angular developer, we can create more than one component.
+
+	as a angular developer we can provide communication between components
+
+	we can provide communication in 4 ways.
+
+		1) @Input()
+
+		2) @Output()
+
+		3) @ViewChild()
+
+		4) @ViewChildren()
+
+	- @Input() used to share the data from parent component to child component
+
+	- @Output() used to share the data from child component to parent component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
