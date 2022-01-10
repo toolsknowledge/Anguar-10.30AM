@@ -824,6 +824,55 @@ communication between components
 
 
 
+Life Cycle Hooks
+****************
+
+1) ngOnChanges()
+
+	- if any change detected in @Input(), automatically this life cycle hook will execute
+
+
+2) ngDoCheck()
+
+	- if any changes detected in directive level, automatically ngDoCheck life cycle hook will execute
+
+
+3) constructor()
+
+	- constructor will execute at booting time
+
+	- constructor mainly for dependency injection
+
+	Ex.
+		creating the object to services
+							   pipes
+							   directives
+							   --
+							   --
+							   --
+4) ngOnInit()
+
+	- ngOnInit called as first life cycle" hook
+	- ngOnInit life cycle hook, used to write the main "business" logic
+	- ngOnInit will execute only once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
