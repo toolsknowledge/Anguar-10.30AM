@@ -862,6 +862,95 @@ Life Cycle Hooks
 
 
 
+Single Page Applications
+************************
+	- loading one component to another component without refreshing the whole webpage called as single page application
+
+	- navigation of components in single page applications called as Routing
+
+	- Routes is the predefined class, used to implement the Routing
+
+	- Routes class available in RouterModule
+
+	- RouterModule available in @angular/router package
+
+
+step 1.
+	create the angular application
+
+	> ng new spaDemo1
+
+
+step 2.
+	switch to angular application
+
+	> cd spaDemo1
+
+step 3.
+	create the components
+
+	1) master
+
+	2) pageone
+
+	3) pagetwo
+
+	4) pagethree
+
+	where master component is the main component
+
+	where pageone,pagetwo and pagethree components are target components
+
+
+	> ng g c master --selector=master -is --flat true --skip-tests
+
+	> ng g c pageone --selector=pageone -is --flat true --skip-tests
+
+	> ng g c pagetwo --selector=pagetwo -is --flat true --skip-tests
+
+	> ng g c pagethree --selector=pagethree -is --flat true --skip-tests
+
+
+
+step 4.
+	implement the business logic in target components
+
+step 5.
+	create the router links
+
+step 6.
+	implement the routing
+
+	app.module.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
