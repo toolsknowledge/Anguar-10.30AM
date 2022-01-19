@@ -864,64 +864,171 @@ Life Cycle Hooks
 
 Single Page Applications
 ************************
-	- loading one component to another component without refreshing the whole webpage called as single page application
 
-	- navigation of components in single page applications called as Routing
+	- loading one component to another component without refreshing whole webpage called as single page application
 
-	- Routes is the predefined class, used to implement the Routing
+	- navigation of components in single page application called as Routing
 
-	- Routes class available in RouterModule
+	- we will implement Routing with the help of Routes class
 
-	- RouterModule available in @angular/router package
+	- Routes class availabile in RouterModule
 
+	- Routes and RouterModule availabile in @angular/router package
 
-step 1.
-	create the angular application
+1) create the angular application
 
 	> ng new spaDemo1
 
 
-step 2.
-	switch to angular application
+2) switch to angular application
 
 	> cd spaDemo1
 
-step 3.
-	create the components
 
-	1) master
+3) create the components
 
-	2) pageone
+	> ng g c master --skip-tests -is --selector=master --flat true
 
-	3) pagetwo
+	> ng g c pageone --skip-tests -is --selector=pageone --flat true
 
-	4) pagethree
+	> ng g c pagetwo --skip-tests -is --selector=pagetwo --flat true
 
-	where master component is the main component
-
-	where pageone,pagetwo and pagethree components are target components
+	> ng g c pagethree --skip-tests -is --selector=pagethree --flat true
 
 
-	> ng g c master --selector=master -is --flat true --skip-tests
+	where MasterComponent is the main component
 
-	> ng g c pageone --selector=pageone -is --flat true --skip-tests
-
-	> ng g c pagetwo --selector=pagetwo -is --flat true --skip-tests
-
-	> ng g c pagethree --selector=pagethree -is --flat true --skip-tests
+	where PageoneComponent, PagetwoComponent and PagethreeComponents are target components
 
 
 
-step 4.
-	implement the business logic in target components
+4) implement the business logic in target components
 
-step 5.
-	create the router links
 
-step 6.
-	implement the routing
+
+5) create the router links
+
+	master.component.html
+
+
+6) implement the Routing
 
 	app.module.ts
+
+
+
+Nested Routing
+**************
+
+1) create the components
+
+	> ng g c childone --skip-tests -is --selector=childone --flat true
+
+	> ng g c childtwo --skip-tests -is --selector=childtwo --flat true
+
+	> ng g c childthree --skip-tests -is --selector=childthree --flat true
+
+
+2) implement the business logic in child components
+
+
+3) create the router links
+
+4) implement the routing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

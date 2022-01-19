@@ -1,7 +1,5 @@
-<a [routerLink]="['/page_one']" style="margin-right: 100px;"><b>Page_One</b></a>
-<!-- <a [routerLink]="['/page_two']" style="margin-right: 100px;"><b>Page_Two</b></a> -->
-
-<a href="/page_two" style="margin-right: 100px;"><b>Page_Two</b></a>
-<a [routerLink]="['/page_three']"><b>Page_Three</b></a>
+<a [routerLink]="['/']" style="margin-right: 100px;"><b>Page_One</b></a>
+<a [routerLink]="['/page_two',222,'p_two',20000]" style="margin-right: 100px;">Page_Two</a>
+<a [routerLink]="['/page_three',333,'p_three',30000]"><b>Page_Three</b></a>
 <br><br>
 <router-outlet></router-outlet>
