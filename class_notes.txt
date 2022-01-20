@@ -937,6 +937,191 @@ Nested Routing
 4) implement the routing
 
 
+Authentication Gurds
+********************
+
+1) CanActivate
+
+	- used to perform the Authentication while entering main routes
+
+
+
+2) CanDeactivate
+
+	- used to perform the Authentication while leaving the main routes
+
+
+3) CanActivateChild
+
+	- used to perform the Authentication while entering child routes
+
+
+
+Note : we will implement Authentication Guards with the help of services
+
+
+******************************************
+spaDemo1
+        src   
+		   app
+		      auth
+				 auth.service.ts
+*****************************************
+
+Lazy Loading
+*************
+	- skip the heavy modules loading at booting time called as Lazy Loading
+
+
+
+1) create the components
+
+2) create the module
+
+3) implement the Routing
+
+4) implement the Auth (CanLoad)
+
+
+step 1.
+ create the project
+
+
+step 2.
+	create the Components
+
+
+	1) MasterComponent
+
+	2) PageoneComponent
+
+step 3.
+	implement the "CustomersModule"
+
+
+	=> customers.component.ts
+	   customers.component.html
+
+
+	   customers.service.ts
+
+
+	   customers.module.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
