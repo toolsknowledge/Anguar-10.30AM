@@ -1009,6 +1009,35 @@ step 3.
 	   customers.module.ts
 
 
+step 4.
+	implement the Routing
+
+
+	app.routes.ts
+
+
+step 5.
+	implement the CanLoad Authentication
+
+	auth.guard.ts
+
+
+Step 6.
+	execute the MasterComponent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
