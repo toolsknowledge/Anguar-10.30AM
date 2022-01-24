@@ -1,0 +1,16 @@
+<table border="1"
+       cellpadding="10px"
+       cellspacing="10px"
+       align="center">
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+    </tr>    
+
+    <tr *ngFor="let x of result">
+        <td>{{x.Name}}</td>
+        <td>{{x.City}}</td>
+        <td>{{x.Country}}</td>
+    </tr>
+</table>

@@ -1,0 +1,21 @@
+<table border="1"
+       align="center"
+       cellpadding="10px"
+       cellspacing="10px">
+    <tr>
+        <th>id</th>
+        <th>email</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>avatar</th>
+    </tr>
+
+    <tr *ngFor="let x of arr">
+        <td>{{x.id}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.first_name}}</td>
+        <td>{{x.last_name}}</td>
+        <td><img width="100px" height="50px" src={{x.avatar}}></td>
+    </tr>
+</table>
+
