@@ -1028,6 +1028,326 @@ Step 6.
 
 
 
+RxJS
+****
+	- RxJS Stands for Reactive Extension JavaScript
+
+	- RxJS package used to make the "asynchronous" calls
+
+	- execution of network calls "parallely" we can call asynchronous calls (Ajax Calls)
+
+	- "Observable" is the predefined class used to make the "asynchronous" calls.
+
+	- Observable class availabile in "RxJS" Package
+
+Ex_1:
+
+	consume the below Rest API call
+
+	URL : https://www.w3schools.com/angular/customers.php
+
+		above rest api call gives the JSON  as Response.
+
+
+
+1) create the model
+
+	customers.model.ts
+
+		- finally "Customers" model is ready
+
+
+2) create the service
+
+
+	customers.service.ts
+
+		finally "CustomersService" is ready with "getCustomers()" function
+
+
+3) create the component
+
+	customers.component.ts
+	customers.component.html
+
+
+
+
+Example_2:
+	create the model
+
+	fake.model.ts
+
+		finally "FakeData" model is ready
+
+
+	create the service
+
+	fake.service.ts
+
+	finally "FakeService" is ready
+
+
+
+Example_3:
+	MiniProject
+
+
+1) create account with mongodb database
+
+	URL : https://www.mongodb.com/cloud/atlas/register
+
+
+
+2) create the database in mongodb database
+
+
+	database name : miniproject
+
+	table name  : login_details
+
+	user name : admin
+
+	password : admin
+
+	URL : mongodb+srv://admin:admin@06-ng-11am.bskgx.mongodb.net/miniproject?retryWrites=true&w=majority
+
+
+
+3) create the backend directory
+
+	Ex.
+		backend
+
+
+4) switch to backend directory
+
+	> cd backend
+
+
+
+5) download the node modules
+
+	1) express
+
+		express module used to develop the rest webservices
+		Ex.
+			GET
+			POST
+			PUT
+			DELETE
+
+	2) mongodb
+		used to connect to mongodb database
+
+	3) cors
+		used to enable the ports communication
+
+
+
+	> yarn add express mongodb cors 
+
+
+6) create the node server
+
+	server.js
+
+
+7) start the node server
+
+	> node server
+
+8) test the rest api call with Postman
+
+
+	> http://localhost:8080/login    (POST)
+
+
+9) create the angular application
+
+	> ng new Example_3
+
+10) create the service
+
+	login.service.ts
+
+		finally "LoginService" is ready with "loginFn"
+
+
+11) create the component
+
+	login.component.ts
+
+	login.component.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

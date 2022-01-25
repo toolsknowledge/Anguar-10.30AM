@@ -1,0 +1,16 @@
+<fieldset>
+    <legend>Login</legend>
+    <label>Email</label>
+    <input type="email" [(ngModel)]="obj.email">
+
+    <br><br>
+    <label>Password</label>
+    <input type="password" [(ngModel)]="obj.password">
+
+    <br><br>
+    <button (click)="login()">Login</button>
+
+    <br><br>
+
+    <h1>{{result | json}}</h1>
+</fieldset>
