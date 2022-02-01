@@ -17,6 +17,9 @@ export default class LoginComponent{
     login():any{
         this.service.loginFn(this.obj).subscribe((posRes)=>{
             this.result = posRes;
+            if(posRes.login==="success"){
+                window.localStorage.setItem("token",JSON.stringify(posRes));
+            }
         },(errRes:HttpErrorResponse)=>{
             if(errRes.error instanceof Error){
                 console.log("client side error");

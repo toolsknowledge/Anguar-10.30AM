@@ -1181,6 +1181,125 @@ Example_3:
 	login.component.html
 
 
+creating the module (child module)
+**********************************
+
+12) create the child module
+
+	login.module.ts
+
+
+
+implement the routing in modules
+********************************
+
+13) create the routing file
+
+	app.routes.ts
+
+
+
+create the Token based on successful login
+******************************************
+	- we will generate tokens by using "jwt-simple" module
+
+	- "jwt-simple" module related to "nodejs"
+
+	- this type of Authentication called as token based Authentication
+
+
+	> yarn add jwt-simple
+
+
+14) store the token into localStorage
+---------------------------------------------------------------------------------
+
+Dashboard Module
+****************
+
+1) design the database
+
+	finally "products" table is ready
+
+
+2) design the backend
+
+	server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
