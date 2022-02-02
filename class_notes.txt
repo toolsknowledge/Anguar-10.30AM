@@ -1226,6 +1226,99 @@ Dashboard Module
 
 	server.js
 
+	http://localhost:8080/products    (GET)
+
+
+3) implement the angular application
+
+	=> products.service.ts
+		finally "ProductsService" is ready with "getProducts()" function
+
+	=> products.component.ts
+	=> products.component.html
+
+
+
+	=> dashboard.component.ts
+	=> dashboard.component.html
+
+	=> dashboard.module.ts
+
+
+
+Angular Material
+****************
+	Angular Material used to apply the Rich ui to Presentation
+
+	Ex.
+		Searching
+
+		Sorting
+
+		Pagination
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
