@@ -1258,6 +1258,121 @@ Angular Material
 		Pagination
 
 
+Forms
+*****
+	collection of user inputs called as form
+
+	Ex.
+		 
+			first name
+
+			last name
+
+			email
+
+			password
+
+			DatePicker
+
+			TimePicker
+
+			---
+			---
+			---
+	Example of Forms
+	****************
+		1) Login Form
+
+		2) Registration Form
+
+		---
+		---
+		---
+
+	angular supports the two types of forms.
+
+		1) template driven forms    (views)
+
+		2) model driven forms         (typescript)  
+
+	template driven forms mainly on presentation
+
+	template driven forms not user friendly while implementing the large applications
+
+	model driven forms mainly on typescript
+
+	model driven forms recomended for large scale applications
+
+	model driven forms are user friendly while implementing the validations
+
+	model driven forms also called as reactive forms
+
+	"ReactiveFormsModule" used to implement the reactive forms
+
+	"FormsModule" used to implement the template driven forms 
+
+
+Step 1.
+	create the angular application
+
+	> ng new formsEx
+
+Step 2.
+	switch to angular application
+
+		> cd formsEx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
