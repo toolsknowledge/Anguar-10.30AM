@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'formsEx';
+
+  step:number = 1;
+
+
+  next():any{
+    this.step = this.step+1;
+  }
+
+  previous():any{
+    this.step = this.step-1;
+  }
+
+
+
+
 }
