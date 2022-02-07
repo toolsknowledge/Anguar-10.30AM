@@ -4,19 +4,48 @@
 
         <div *ngIf="step == 1">  
             <h5 class="text-center">First Step</h5>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="fname" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lname">
-            </div>
-            <div class="mb-3">
-                <button class="btn btn-warning btn-sm" *ngIf="step!=1">Previous</button>
-                <button class="btn btn-primary btn-sm" (click)="next()">Next</button>
-                <button class="btn btn-success btn-sm" *ngIf="step!=1">Submit</button>
-            </div>
+        
+           <div>
+              <span class="p-float-label">
+                  <input id="float-input" type="text" name="fname" [(ngModel)]="registrationData.fname"> 
+                  <label for="float-input">First Name</label>
+              </span>
+          </div>
+
+          <br>
+
+          <div>
+              <span class="p-float-label">
+                  <input id="float-input" type="text" name="lname" [(ngModel)]="registrationData.lname"> 
+                  <label for="float-input">Last Name</label>
+              </span>
+          </div>
+
+
+          <br>
+
+          <div>
+            <p-password [toggleMask] ="true" name="password" [(ngModel)]="registrationData.password"></p-password>
+          </div>
+
+
+          <br>
+          <div>
+            <span class="p-float-label">
+                <input id="float-input" type="email" name="email" [(ngModel)]="registrationData.email"> 
+                <label for="float-input">Email</label>
+            </span>
+        </div>
+
+
+        <br>
+        <div>
+          <button pButton type="button" label="Next" class="p-button-success p-button-sm p-button-raised p-button-rounded"></button>
+        </div>
+
+        {{registrationData | json}}
+
+
         </div>
 
 
