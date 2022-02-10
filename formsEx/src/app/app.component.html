@@ -40,7 +40,11 @@
 
         <br>
         <div>
-          <button pButton type="button" label="Next" class="p-button-success p-button-sm p-button-raised p-button-rounded"></button>
+          <button pButton 
+                  type="button" 
+                  label="Next" 
+                  class="p-button-success p-button-sm p-button-raised p-button-rounded"
+                  (click)="next()"></button>
         </div>
 
         {{registrationData | json}}
@@ -51,14 +55,44 @@
 
       <div *ngIf="step == 2"> 
         <h5 class="text-center">Second Step</h5>
+         
+        
+        <div class="mb-3">
+          <p-dropdown
+                [options]="languages"
+                placeholder="Select a Language"
+                optionLabel="name"
+                [showClear]="true">
+          </p-dropdown>
+        </div>
+         
+         
+         
+         
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+         
+          
+
+            <div *ngFor="let category of categories" class="p-field-checkbox">
+              <p-checkbox name="group2" value="category" [value]="category"  [(ngModel)]="selectedCategories" [inputId]="category.key" ></p-checkbox>
+              <label [for]="category.key">{{category.name}}</label>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="userPassword">
-          </div>
+
+
+
+
+
+
+            </div>
+
+           
+
+
+
+
+
+
+
           <div class="mb-3">
               <button class="btn btn-warning btn-sm" (click)="previous()">Previous</button>
               <button class="btn btn-primary btn-sm" (click)="next()">Next</button>
