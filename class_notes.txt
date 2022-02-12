@@ -1339,6 +1339,140 @@ step == 3
 
 
 
+Angular Applications are Component Based Applications
+
+As a Angular Developer, we can create more than one component
+
+As a Angular Developer, we can provide communication between components.
+
+we can provide communication by using following directives
+
+		1) Input
+
+		2) Output
+
+		3) ViewChild
+
+		4) ViewChildren
+
+Input directive helps to provide the communication between parent Component to child component
+
+output directive provides the communication between child component to parent component
+
+ViewChild and ViewChildren are used to provide the communication between sibiling components
+
+in complex projects communication between components are difficult
+
+to reduce complexity between components we should implement state management
+
+maintaining the common place for all components for transactions called as state management
+
+we can implement state management with the help of NgRx Package.
+
+NgRx package reduces the burden on server
+
+TERNINOGY
+*********
+
+	1) STORE
+
+	2) INITIAL STATE
+
+	3) REDUCER
+
+	4) STATE
+
+	5) DISPATCH
+
+	6) TYPE
+
+	7) PAYLOAD
+
+	8) SUBSCRIBE
+
+	9) EFFECTS   (MANAGE THE SIDE EFFECTS DATA)  (API DATA)
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
