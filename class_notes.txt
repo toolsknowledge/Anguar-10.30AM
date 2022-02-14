@@ -1394,6 +1394,162 @@ TERNINOGY
 
 
 
+Project Implementation
+***********************
+
+images
+******
+https://redux-bucket.s3.amazonaws.com/shirt1.jpg
+https://redux-bucket.s3.amazonaws.com/shirt2.jpg
+https://redux-bucket.s3.amazonaws.com/shirt3.jpg
+https://redux-bucket.s3.amazonaws.com/pant1.jpg
+https://redux-bucket.s3.amazonaws.com/pant2.jpg
+https://redux-bucket.s3.amazonaws.com/pant3.jpg
+
+
+
+store above images to database
+******************************
+
+database name : ngrx-angular
+
+collection name : products
+
+user name : admin
+
+password : admin
+
+connection url : mongodb+srv://admin:admin@06-ng-11am.bskgx.mongodb.net/ngrx-angular?retryWrites=true&w=majority
+
+
+create the backend directory
+****************************
+ngrx-server
+
+
+switch to ngrx-server
+*********************
+
+> cd ngrx-server
+
+
+download the node modules
+*************************
+1) express
+
+2) mongodb
+
+3) cors
+
+
+implement the backend application
+*********************************
+
+server.js
+
+
+start the server
+****************
+
+> node server
+
+
+test the rest api by using Postman
+**********************************
+
+> http://localhost:8080/products
+
+
+
+=> create the angular application
+
+=> switch to angular application
+
+	> cd ngrx-get-example
+
+=> download the libraries
+
+	> yarn add @ngrx/store @ngrx/effects
+
+=> create the model
+
+		************************************************
+		src
+		   app
+		      model
+			  	product.model.ts
+		************************************************
+
+		finally "Product" model is ready
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
