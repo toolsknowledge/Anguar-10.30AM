@@ -1463,6 +1463,8 @@ test the rest api by using Postman
 
 => create the angular application
 
+	> ng new ngrx-get-example
+
 => switch to angular application
 
 	> cd ngrx-get-example
@@ -1481,6 +1483,95 @@ test the rest api by using Postman
 		************************************************
 
 		finally "Product" model is ready
+
+=> create the service
+
+		**************************************************
+		src
+		   app
+		      services
+			      products.service.ts
+		*************************************************
+
+		finally "ProductsService" is ready "getProducts()" function
+
+
+
+=> create the types
+
+	- our application requirements called as types
+
+	- in general, we will define types with const
+
+
+	**********************************************************
+	src
+	   app
+	      types
+		     products.types.ts
+	*********************************************************
+	finally following types are ready
+
+	1) PRODUCTS_LIST
+
+	2) PRODUCTS_LIST_SUCCESS
+
+	3) PRODUCTS_LIST_FAIL
+
+
+
+=> create the actions
+
+	**************************************************************
+	src
+	   app
+	     actions
+		    products.actions.ts
+	**************************************************************
+
+	finally following actions are ready
+
+	1) productsList
+
+	2) productsListSuccess
+
+	3) productsListFail
+
+	productsListSuccess expects server data from effects
+
+	productsListFail expects error from effects
+
+
+=> create the effects
+
+	execution of actions called as effects
+
+	**********************************************************
+	src
+	  app
+	    effects
+		  products.effects.ts
+	********************************************************
+
+	finally "ProductsEffects" is ready with "product$" constant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
