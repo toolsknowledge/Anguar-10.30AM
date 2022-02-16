@@ -1537,9 +1537,9 @@ test the rest api by using Postman
 
 	3) productsListFail
 
-	productsListSuccess expects server data from effects
+	productsListSuccess expects server "data" from "effects"
 
-	productsListFail expects error from effects
+	productsListFail expects "error" from effects
 
 
 => create the effects
@@ -1554,6 +1554,57 @@ test the rest api by using Postman
 	********************************************************
 
 	finally "ProductsEffects" is ready with "product$" constant
+
+
+
+=> create the reducer
+
+	actions will handover result to reducer
+
+
+	******************************************************
+	src
+	  app
+	    reducer
+		   products.reducer.ts
+	******************************************************
+
+	finally "productsReducer" is ready
+
+
+
+=> deploy reducer to store itself
+
+	app.module.ts
+
+	finally result of project binded to "products" variable
+
+
+
+=> bind final result to selector
+
+	selector can provide application output to component
+
+	****************************************************************
+	src
+	   app
+	      selector
+		     products.selector.ts
+	****************************************************************
+
+	finally "productsSelector" is ready with final result
+
+
+
+=> create the Component
+
+	dispatch
+
+	subscribe
+
+
+
+
 
 
 
