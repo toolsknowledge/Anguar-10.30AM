@@ -1607,6 +1607,249 @@ test the rest api by using Postman
 
 
 
+Spring Boot Integration with Angular (State management-NgRx)
+************************************************************
+
+Step 1.
+	execute the Spring Boot Application
+
+Step 2.
+	test the following rest api by using Postman
+
+	> http://localhost:5000/api/v1/products
+
+Step 3.
+	create the angular application
+
+	> ng new springboot-integration
+
+Step 4.
+	switch to angular application
+
+	> cd springboot-integration
+
+
+Step 5.
+	download the libraries
+
+	> yarn add @ngrx/store @ngrx/effects
+
+Step 6.
+	create the model
+
+	src
+	  app
+	    model
+		  product.model.ts
+
+			finally "ProductModel" is ready
+
+
+Step 7.
+	create the service
+
+	src
+	  app
+	    services
+		   product.service.ts
+
+		finally "ProductsService" is ready with "getProducts()" function
+
+
+Step 8.
+	create the types
+
+	src
+	  app
+	    types
+		  products.types.ts
+
+			finally "GET_PRODUCTS", "GET_PRODUCTS_SUCCESS", and "GET_PRODUCTS_FAIL" types are ready
+
+Step 9.
+	create the actions
+
+	src
+	  app
+	    actions
+		  products.actions.ts
+
+				finally following actions are ready
+
+				1) getProducts
+
+				2) getProductsSuccess    <-- expecting result from Effects   (posRes)
+
+				3) getProductsFail <-- expecting result from Effects (errRes)
+
+Step 10.
+	create the effects
+
+	src
+	   app
+	     effects
+		    products.effects.ts
+
+			finally "ProductsEffects" is ready
+
+Step 11.
+	create the reducer
+
+	src
+	  app
+	    reducer
+		    products.reducer.ts
+
+			finally "productsReducer" is ready
+
+
+Step 12.
+	deploy reducer to store
+
+	app.module.ts
+
+
+Step 13.
+	create the selector
+
+	src
+	  app
+	    selector
+		  products.selector.ts
+
+
+		finally "productsSelector" is ready
+
+
+Step 14.
+	perform dispatch and subscribe in AppComponent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
