@@ -1727,6 +1727,339 @@ Step 14.
 
 
 
+Post Request with Angular  (State Management - NgRx)
+****************************************************
+
+1) start the node server
+
+	> cd RxJS
+
+	> cd backend
+
+	> node server
+
+
+2) test the following rest api by using Postman
+
+		=> http://localhost:8080/login (POST)
+
+
+3) create the angular application
+
+		> ng new ngrx-post-example
+
+
+4) switch to angular application
+
+		> cd ngrx-post-example
+
+
+5) download the angular libraries
+
+		> @ngrx/store
+
+		> @ngrx/effects
+
+
+		> yarn add @ngrx/store @ngrx/effects
+
+
+6) implement the state management
+
+		=> model
+
+		=> service
+
+		=> types
+
+		=> actions
+
+		=> effects
+
+		=> reducer
+
+		=> store
+
+		=> selector
+
+		=> component
+
+create the model
+****************
+
+ngrx-post-example
+                src
+				  app
+				    model
+					  login.model.ts
+	finally "LoginModel" is ready
+	
+
+create the service
+******************
+
+ngrx-post-example
+                src
+				  app
+				    services
+					    login.service.ts
+	finally "LoginService" is ready with "loginFn(-)"
+
+
+
+create the types
+****************
+
+*********************************************
+ngrx-post-example
+                src
+				  app
+				    types
+					   login.types.ts
+*********************************************
+
+		finally following types are ready
+
+		1) LOGIN
+
+		2) LOGIN_SUCCESS
+
+		3) LOGIN_FAIL
+
+create the actions
+******************
+
+******************************************************
+ngrx-post-example
+                src
+				  app
+				    actions
+					   login.actions.ts
+****************************************************
+
+		finally following actions are ready
+
+		1) loginAction
+
+		2) loginActionSuccess
+
+		3) loginActionFail
+
+
+create the effects
+******************
+
+****************************************************************
+ngrx-post-example
+                src
+				  app
+				    effects
+						login.effects.ts
+****************************************************************
+
+	finally "LoginEffects" is ready
+
+
+create the reducer
+******************
+
+**************************************************************
+ngrx-post-example
+                src
+				  app
+				    reducer
+					    login.reducer.ts
+*************************************************************
+
+		finally "loginReducer" is ready
+
+
+create the store
+****************
+app.module.ts
+
+
+create the selector
+*******************
+
+*********************************************
+ngrx-post-example
+                src
+				   app
+				     selector
+					    login.selector.ts
+*********************************************
+
+	finally "loginSelector" is ready
+
+
+
+create the component
+********************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
