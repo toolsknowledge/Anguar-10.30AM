@@ -1,0 +1,10 @@
+RxJS
+****
+    RXJS Stands for Reactive Extension JavaScript
+
+    RxJS Package used to make asynchronous calls
+
+
+1) forkJoin()
+
+
