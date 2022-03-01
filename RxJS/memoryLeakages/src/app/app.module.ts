@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { OperatorExComponent } from './operator-ex/operator-ex.component';
+import { MapComponent } from './map/map.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OperatorExComponent
+    OperatorExComponent,
+    MapComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [OperatorExComponent]
+  bootstrap: [MapComponent]
 })
 export class AppModule { }
