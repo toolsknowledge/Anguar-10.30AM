@@ -5,18 +5,22 @@ import { AppComponent } from './app.component';
 import { OperatorExComponent } from './operator-ex/operator-ex.component';
 import { MapComponent } from './map/map.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SwitchmapComponent } from './switchmap/switchmap.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     OperatorExComponent,
-    MapComponent
+    MapComponent,
+    SwitchmapComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [MapComponent]
+  bootstrap: [SwitchmapComponent]
 })
 export class AppModule { }
