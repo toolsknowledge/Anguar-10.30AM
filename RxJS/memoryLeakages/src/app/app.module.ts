@@ -7,20 +7,23 @@ import { MapComponent } from './map/map.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SwitchmapComponent } from './switchmap/switchmap.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MergemapComponent } from './mergemap/mergemap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OperatorExComponent,
     MapComponent,
-    SwitchmapComponent
+    SwitchmapComponent,
+    MergemapComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [SwitchmapComponent]
+  bootstrap: [MergemapComponent]
 })
 export class AppModule { }
